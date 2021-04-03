@@ -1,4 +1,3 @@
-var bg = document.getElementById('bg');
 var modal = document.getElementById('modal');
 var infoBtn = document.getElementById('info');
 var textBg = document.getElementById('textbg');
@@ -11,11 +10,11 @@ var $container = $('.container').isotope({
         latitudeRev: '.latitude',
         logitude: '.logitude',
         logitudeRev: '.logitude',
-        price: function (itemElem) { // function
+        price: function (itemElem) {
             var price = $(itemElem).find('.price').text();
             return parseInt(price.replace(/[\(\)]/g, ''));
         },
-        priceRev: function (itemElem) { // function
+        priceRev: function (itemElem) {
             var price = $(itemElem).find('.price').text();
             return parseInt(price.replace(/[\(\)]/g, ''));
         }
@@ -29,8 +28,7 @@ $(document).ready(function () {
 });
 
 window.onclick = function (close) {
-    if (close.target == bg || close.target == textBg) {
-        bg.style.display = "none";
+    if (close.target == textBg) {
         modal.style.display = "none";
         setTimeout(() => {
             textBg.classList.add('disappear')
@@ -40,7 +38,6 @@ window.onclick = function (close) {
 
 
 infoBtn.onclick = function () {
-    bg.style.display = "block";
     modal.style.display = "block";
     textBg.classList.remove('disappear');
 };
