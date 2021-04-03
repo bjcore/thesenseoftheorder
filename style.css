@@ -9,6 +9,7 @@ body{
 
 button{
     font-size: 0.9em;
+    background-color: rgb(226, 226, 226);
     display: inline-flex;
     margin-bottom: 10px;
     border: 0;
@@ -79,6 +80,8 @@ li div{
 }
 
 .text-backgroud{
+    word-break:normal;
+    line-height: 1.2em;
     position: fixed;
     font-size:15rem;
     font-weight: 900;
@@ -136,4 +139,9 @@ li div{
     color:#A48010;
 }
 
-
+@media screen and (max-width: 500px){
+    .text-backgroud{
+        font-size:6rem;
+        word-break:normal;
+}
+}
