@@ -1,0 +1,139 @@
+html{
+    font-size: 14px;
+}
+
+body{
+    word-break: keep-all;
+    font-family: "ibm plex mono", "noto sans", sans-serif;
+}
+
+button{
+    font-size: 0.9em;
+    display: inline-flex;
+    margin-bottom: 10px;
+    border: 0;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+article h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+article p{
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+li div{
+    font-size: 1rem;
+    text-align: center;
+    flex-basis: 200px;
+}
+
+#info{
+    width: auto;
+    height: auto;
+    font-size: 5rem;
+    display: block;
+    top: 2%;
+    right: 2%;
+    position: fixed;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+}
+
+#bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contents{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.contents:hover{
+    color:white;
+}
+
+.modal-wrap{
+    min-width: 300px;
+    padding: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    background-color: rgb(255,255,255);
+    z-index: 4;
+    display: block;
+}
+
+.text-backgroud{
+    position: fixed;
+    font-size:15rem;
+    font-weight: 900;
+    display: block;
+    color: white;
+    z-index: 3;
+}
+
+.text-backgroud.disappear{
+    display: none;
+}
+
+.line1{
+    background-color: #08308F;
+    color: #08308F;
+}
+
+.line2{
+    background-color: #0fA349;
+    color:  #0fA349;
+}
+
+.line3{
+    background-color: #F08302;
+    color:  #F08302;
+}
+
+.line4{
+    background-color: #00A5DF;
+    color: #00A5DF;
+}
+
+.line5{
+    background-color:#A1499B;
+    color: #A1499B;
+}
+
+.line6{
+    background-color: #C88B10;
+    color:#C88B10;
+}
+
+.line7{
+    background-color: #627535;
+    color:#627535;
+}
+
+.line8{
+    background-color: #E84D72;
+    color:#E84D72;
+}
+
+.line9{
+    background-color: #A48010;
+    color:#A48010;
+}
+
+

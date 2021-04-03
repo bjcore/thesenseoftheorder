@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;900&family=IBM+Plex+Mono:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="textbg" class="text-backgroud"></div>
+    <div id="info">
+        i
+    </div>
+    <div id="modal" class="modal-wrap">
+        <article>
+            <h1>질서의 감각</h1>
+            <p>질서를 가진 정보의 덩어리인 지하철 노선도에 새로운 질서(역명, 위치, 혹은 공시지가에 따른)를 부여한다. 새로운 질서를 가지게 된 기존의 정보는 우리에게 어떠한 시각적 감각을 제공할까.
+            </p>
+        </article>
+        <div class="sort-by-button-group">
+            <button data-sort-by="original-order" sort-text="없음">질서</button>
+            <button data-sort-by="name" sort-text="기역에서부터">새로운질서1</button>
+            <button data-sort-by="nameRev" sort-text="히읗에서부터">새로운질서2</button>
+            <button data-sort-by="latitude" sort-text="아래에서부터">새로운질서3</button>
+            <button data-sort-by="latitudeRev" sort-text="위에서부터">새로운질서4</button>
+            <button data-sort-by="logitude" sort-text="왼쪽에서부터">새로운질서5</button>
+            <button data-sort-by="logitudeRev" sort-text="오른쪽에서부터">새로운질서6</button>
+            <button data-sort-by="price" sort-text="가격이 낮은것부터">새로운질서7</button>
+            <button data-sort-by="priceRev" sort-text="가격이 높은것부터">새로운질서8</button>
+        </div>
+    </div>
+    </div>
+    <ul id="stations" class="container">
+        <li class="contents line1">
+            <div class="name">인천</div>
+            <div class="latitude">37.476206</div>
+            <div class="logitude">126.616940</div>
+            <div class="price">261700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동인천</div>
+            <div class="latitude">37.475778</div>
+            <div class="logitude">126.632274</div>
+            <div class="price">759000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">도원</div>
+            <div class="latitude">37.468421</div>
+            <div class="logitude">126.642909</div>
+            <div class="price">453000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">제물포</div>
+            <div class="latitude">37.466809</div>
+            <div class="logitude">126.656366</div>
+            <div class="price">478500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">도화</div>
+            <div class="latitude">37.466198</div>
+            <div class="logitude">126.668101</div>
+            <div class="price">386100</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">주안</div>
+            <div class="latitude">37.464973</div>
+            <div class="logitude">126.680085</div>
+            <div class="price">237000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">간석</div>
+            <div class="latitude">37.464698</div>
+            <div class="logitude">126.693896</div>
+            <div class="price">419800</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동암</div>
+            <div class="latitude">37.471308</div>
+            <div class="logitude">126.702876</div>
+            <div class="price">376200</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">부평</div>
+            <div class="latitude">37.489391</div>
+            <div class="logitude">126.724574</div>
+            <div class="price">1830000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">백운</div>
+            <div class="latitude">37.483488</div>
+            <div class="logitude">126.707292</div>
+            <div class="price">340900</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">부개</div>
+            <div class="latitude">37.488402</div>
+            <div class="logitude">126.740715</div>
+            <div class="price">415800</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">송내</div>
+            <div class="latitude">37.487600</div>
+            <div class="logitude">126.753159</div>
+            <div class="price">462000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">중동</div>
+            <div class="latitude">37.486415</div>
+            <div class="logitude">126.764238</div>
+            <div class="price">462000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">부천</div>
+            <div class="latitude">37.483734</div>
+            <div class="logitude">126.782429</div>
+            <div class="price">1916000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">소사</div>
+            <div class="latitude">37.482634</div>
+            <div class="logitude">126.795628</div>
+            <div class="price">462000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">역곡</div>
+            <div class="latitude">37.485134</div>
+            <div class="logitude">126.811891</div>
+            <div class="price">221100</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">온수</div>
+            <div class="latitude">37.492178</div>
+            <div class="logitude">126.823500</div>
+            <div class="price">1392000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">오류동</div>
+            <div class="latitude">37.494296</div>
+            <div class="logitude">126.844713</div>
+            <div class="price">933900</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">개봉</div>
+            <div class="latitude">37.494738</div>
+            <div class="logitude">126.858961</div>
+            <div class="price">757500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">구일</div>
+            <div class="latitude">37.496674</div>
+            <div class="logitude">126.870853</div>
+            <div class="price">429500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">구로</div>
+            <div class="latitude">37.502995</div>
+            <div class="logitude">126.881986</div>
+            <div class="price">1118000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">신도림</div>
+            <div class="latitude">37.508722</div>
+            <div class="logitude">126.891052</div>
+            <div class="price">1118000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">영등포</div>
+            <div class="latitude">37.515406</div>
+            <div class="logitude">126.907466</div>
+            <div class="price">6165000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">신길</div>
+            <div class="latitude">37.516806</div>
+            <div class="logitude">126.917587</div>
+            <div class="price">1013000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">대방</div>
+            <div class="latitude">37.513344</div>
+            <div class="logitude">126.926186</div>
+            <div class="price">815100</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">노량진</div>
+            <div class="latitude">37.514190</div>
+            <div class="logitude">126.942506</div>
+            <div class="price">4125000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">용산</div>
+            <div class="latitude">37.529745</div>
+            <div class="logitude">126.964607</div>
+            <div class="price">15120000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">남영</div>
+            <div class="latitude">37.541037</div>
+            <div class="logitude">126.971159</div>
+            <div class="price">2500000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">서울역</div>
+            <div class="latitude">37.554953</div>
+            <div class="logitude">126.970796</div>
+            <div class="price">12710000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">시청</div>
+            <div class="latitude">37.565685</div>
+            <div class="logitude">126.977298</div>
+            <div class="price">4232000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">종각</div>
+            <div class="latitude">37.570153</div>
+            <div class="logitude">126.983055</div>
+            <div class="price">18180000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">종로3가</div>
+            <div class="latitude">37.570405</div>
+            <div class="logitude">126.992046</div>
+            <div class="price">11880000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">종로5가</div>
+            <div class="latitude">37.570974</div>
+            <div class="logitude">127.001787</div>
+            <div class="price">8085000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동대문</div>
+            <div class="latitude">37.571686</div>
+            <div class="logitude">127.010911</div>
+            <div class="price">5313000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동묘앞</div>
+            <div class="latitude">37.573208</div>
+            <div class="logitude">127.016446</div>
+            <div class="price">4272000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">신설동</div>
+            <div class="latitude">37.576099</div>
+            <div class="logitude">127.024514</div>
+            <div class="price">2836000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">제기동</div>
+            <div class="latitude">37.578114</div>
+            <div class="logitude">127.034932</div>
+            <div class="price">1402000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">청량리</div>
+            <div class="latitude">37.580086</div>
+            <div class="logitude">127.045098</div>
+            <div class="price">8400000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">회기</div>
+            <div class="latitude">37.589772</div>
+            <div class="logitude">127.058110</div>
+            <div class="price">1052000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">외대앞</div>
+            <div class="latitude">37.596041</div>
+            <div class="logitude">127.063556</div>
+            <div class="price">1089000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">신이문</div>
+            <div class="latitude">37.602523</div>
+            <div class="logitude">127.067534</div>
+            <div class="price">1089000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">석계</div>
+            <div class="latitude">37.615176</div>
+            <div class="logitude">127.065639</div>
+            <div class="price">1138000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">광운대</div>
+            <div class="latitude">37.623924</div>
+            <div class="logitude">127.062058</div>
+            <div class="price">2646000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">월계</div>
+            <div class="latitude">37.633294</div>
+            <div class="logitude">127.058902</div>
+            <div class="price">429000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">녹천</div>
+            <div class="latitude">37.644859</div>
+            <div class="logitude">127.051253</div>
+            <div class="price">429000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">창동</div>
+            <div class="latitude">37.653962</div>
+            <div class="logitude">127.047270</div>
+            <div class="price">1320000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">방학</div>
+            <div class="latitude">37.667561</div>
+            <div class="logitude">127.044292</div>
+            <div class="price">1194000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">도봉</div>
+            <div class="latitude">37.679286</div>
+            <div class="logitude">127.045543</div>
+            <div class="price">768900</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">도봉산</div>
+            <div class="latitude">37.689150</div>
+            <div class="logitude">127.046024</div>
+            <div class="price">372900</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">망월사</div>
+            <div class="latitude">37.709930</div>
+            <div class="logitude">127.047461</div>
+            <div class="price">509500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">회룡</div>
+            <div class="latitude">37.724254</div>
+            <div class="logitude">127.047304</div>
+            <div class="price">509500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">의정부</div>
+            <div class="latitude">37.738681</div>
+            <div class="logitude">127.045897</div>
+            <div class="price">3275000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">가능</div>
+            <div class="latitude">37.748640</div>
+            <div class="logitude">127.044178</div>
+            <div class="price">430400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">녹양</div>
+            <div class="latitude">37.759422</div>
+            <div class="logitude">127.042224</div>
+            <div class="price">164300</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">양주</div>
+            <div class="latitude">37.774293</div>
+            <div class="logitude">127.044597</div>
+            <div class="price">150400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">덕계</div>
+            <div class="latitude">37.818810</div>
+            <div class="logitude">127.056613</div>
+            <div class="price">75900</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">덕정</div>
+            <div class="latitude">37.843181</div>
+            <div class="logitude">127.061548</div>
+            <div class="price">177800</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">지행</div>
+            <div class="latitude">37.892313</div>
+            <div class="logitude">127.055737</div>
+            <div class="price">187000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동두천중앙</div>
+            <div class="latitude">37.901686</div>
+            <div class="logitude">127.056394</div>
+            <div class="price">300300</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">보산</div>
+            <div class="latitude">37.914079</div>
+            <div class="logitude">127.057209</div>
+            <div class="price">307500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">동두천</div>
+            <div class="latitude">37.927785</div>
+            <div class="logitude">127.054821</div>
+            <div class="price">93700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">소요산</div>
+            <div class="latitude">37.948085</div>
+            <div class="logitude">127.061039</div>
+            <div class="price">111200</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">신창</div>
+            <div class="latitude">36.769389</div>
+            <div class="logitude">126.950931</div>
+            <div class="price">32800</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">온양온천</div>
+            <div class="latitude">36.780749</div>
+            <div class="logitude">127.002944</div>
+            <div class="price">52100</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">배방</div>
+            <div class="latitude">36.777542</div>
+            <div class="logitude">127.052770</div>
+            <div class="price">59400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">아산</div>
+            <div class="latitude">36.792143</div>
+            <div class="logitude">127.104494</div>
+            <div class="price">528000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">쌍용</div>
+            <div class="latitude">36.793747</div>
+            <div class="logitude">127.121431</div>
+            <div class="price">237600</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">봉명</div>
+            <div class="latitude">36.801087</div>
+            <div class="logitude">127.135530</div>
+            <div class="price">179800</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">천안</div>
+            <div class="latitude">36.810260</div>
+            <div class="logitude">127.146447</div>
+            <div class="price">398500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">두정</div>
+            <div class="latitude">36.833314</div>
+            <div class="logitude">127.149020</div>
+            <div class="price">87400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">직산</div>
+            <div class="latitude">36.870468</div>
+            <div class="logitude">127.143879</div>
+            <div class="price">47000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">성환</div>
+            <div class="latitude">36.915739</div>
+            <div class="logitude">127.126936</div>
+            <div class="price">51400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">평택</div>
+            <div class="latitude">36.990894</div>
+            <div class="logitude">127.085067</div>
+            <div class="price">1516000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">지제</div>
+            <div class="latitude">37.018825</div>
+            <div class="logitude">127.070433</div>
+            <div class="price">369200</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">서정리</div>
+            <div class="latitude">37.056296</div>
+            <div class="logitude">127.052823</div>
+            <div class="price">90600</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">송탄</div>
+            <div class="latitude">37.075477</div>
+            <div class="logitude">127.054417</div>
+            <div class="price">203600</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">진위</div>
+            <div class="latitude">37.109860</div>
+            <div class="logitude">127.062387</div>
+            <div class="price">99500</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">오산</div>
+            <div class="latitude">37.145880</div>
+            <div class="logitude">127.066789</div>
+            <div class="price">234300</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">오산대</div>
+            <div class="latitude">37.169253</div>
+            <div class="logitude">127.063004</div>
+            <div class="price">194700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">세마</div>
+            <div class="latitude">37.187073</div>
+            <div class="logitude">127.043283</div>
+            <div class="price">155700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">병점</div>
+            <div class="latitude">37.206780</div>
+            <div class="logitude">127.033107</div>
+            <div class="price">158400</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">세류</div>
+            <div class="latitude">37.245394</div>
+            <div class="logitude">127.012986</div>
+            <div class="price">84100</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">수원</div>
+            <div class="latitude">37.266194</div>
+            <div class="logitude">126.999602</div>
+            <div class="price">3080000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">화서</div>
+            <div class="latitude">37.284141</div>
+            <div class="logitude">126.989523</div>
+            <div class="price">264000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">성균관대</div>
+            <div class="latitude">37.300255</div>
+            <div class="logitude">126.970511</div>
+            <div class="price">304700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">의왕</div>
+            <div class="latitude">37.321099</div>
+            <div class="logitude">126.948178</div>
+            <div class="price">89700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">당정</div>
+            <div class="latitude">37.343763</div>
+            <div class="logitude">126.948369</div>
+            <div class="price">325000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">군포</div>
+            <div class="latitude">37.353596</div>
+            <div class="logitude">126.948412</div>
+            <div class="price">325000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">금정</div>
+            <div class="latitude">37.372171</div>
+            <div class="logitude">126.943378</div>
+            <div class="price">399700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">명학</div>
+            <div class="latitude">37.384586</div>
+            <div class="logitude">126.935485</div>
+            <div class="price">289700</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">안양</div>
+            <div class="latitude">37.401753</div>
+            <div class="logitude">126.922571</div>
+            <div class="price">2149000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">관악</div>
+            <div class="latitude">37.419200</div>
+            <div class="logitude">126.908707</div>
+            <div class="price">231600</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">석수</div>
+            <div class="latitude">37.434090</div>
+            <div class="logitude">126.902508</div>
+            <div class="price">231600</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">금천구청</div>
+            <div class="latitude">37.455639</div>
+            <div class="logitude">126.893978</div>
+            <div class="price">970200</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">독산</div>
+            <div class="latitude">37.466573</div>
+            <div class="logitude">126.889300</div>
+            <div class="price">990000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">가산디지털단지</div>
+            <div class="latitude">37.481603</div>
+            <div class="logitude">126.882517</div>
+            <div class="price">1204000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">광명</div>
+            <div class="latitude">37.416071</div>
+            <div class="logitude">126.884513</div>
+            <div class="price">2735000</div>
+        </li>
+        <li class="contents line1">
+            <div class="name">서동탄</div>
+            <div class="latitude">37.195368</div>
+            <div class="logitude">127.051793</div>
+            <div class="price">144800</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">까치산</div>
+            <div class="latitude">37.531346</div>
+            <div class="logitude">126.846857</div>
+            <div class="price">1955000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신정네거리</div>
+            <div class="latitude">37.520041</div>
+            <div class="logitude">126.852877</div>
+            <div class="price">2065000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">양천구청</div>
+            <div class="latitude">37.512214</div>
+            <div class="logitude">126.865072</div>
+            <div class="price">1716000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">도림천</div>
+            <div class="latitude">37.514261</div>
+            <div class="logitude">126.882793</div>
+            <div class="price">669900</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신도림</div>
+            <div class="latitude">37.509452</div>
+            <div class="logitude">126.890670</div>
+            <div class="price">669900</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">문래</div>
+            <div class="latitude">37.517916</div>
+            <div class="logitude">126.894752</div>
+            <div class="price">2237000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">영등포구청</div>
+            <div class="latitude">37.525799</div>
+            <div class="logitude">126.896590</div>
+            <div class="price">2907000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">당산</div>
+            <div class="latitude">37.534994</div>
+            <div class="logitude">126.902738</div>
+            <div class="price">3432000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">합정</div>
+            <div class="latitude">37.550010</div>
+            <div class="logitude">126.914506</div>
+            <div class="price">2103000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">홍대입구</div>
+            <div class="latitude">37.556705</div>
+            <div class="logitude">126.923638</div>
+            <div class="price">6600000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신촌</div>
+            <div class="latitude">37.555094</div>
+            <div class="logitude">126.936901</div>
+            <div class="price">2364000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">이대</div>
+            <div class="latitude">37.556779</div>
+            <div class="logitude">126.946029</div>
+            <div class="price">2504000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">아현</div>
+            <div class="latitude">37.557301</div>
+            <div class="logitude">126.956205</div>
+            <div class="price">2473000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">충정로</div>
+            <div class="latitude">37.559746</div>
+            <div class="logitude">126.964527</div>
+            <div class="price">1481000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">시청</div>
+            <div class="latitude">37.563609</div>
+            <div class="logitude">126.975387</div>
+            <div class="price">9933000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">을지로입구</div>
+            <div class="latitude">37.565982</div>
+            <div class="logitude">126.982685</div>
+            <div class="price">18990000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">을지로3가</div>
+            <div class="latitude">37.566273</div>
+            <div class="logitude">126.990921</div>
+            <div class="price">7425000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">을지로4가</div>
+            <div class="latitude">37.566596</div>
+            <div class="logitude">126.997929</div>
+            <div class="price">7887000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">동대문역사문화공원</div>
+            <div class="latitude">37.565610</div>
+            <div class="logitude">127.009072</div>
+            <div class="price">4554000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신당</div>
+            <div class="latitude">37.565660</div>
+            <div class="logitude">127.019590</div>
+            <div class="price">4422000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">상왕십리</div>
+            <div class="latitude">37.564367</div>
+            <div class="logitude">127.029352</div>
+            <div class="price">2587000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">왕십리</div>
+            <div class="latitude">37.561184</div>
+            <div class="logitude">127.035624</div>
+            <div class="price">2526000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">한양대</div>
+            <div class="latitude">37.555235</div>
+            <div class="logitude">127.043735</div>
+            <div class="price">1422000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">뚝섬</div>
+            <div class="latitude">37.547160</div>
+            <div class="logitude">127.047448</div>
+            <div class="price">2772000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">성수</div>
+            <div class="latitude">37.544592</div>
+            <div class="logitude">127.055953</div>
+            <div class="price">8134000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">건대입구</div>
+            <div class="latitude">37.540388</div>
+            <div class="logitude">127.069181</div>
+            <div class="price">2519000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">구의</div>
+            <div class="latitude">37.536990</div>
+            <div class="logitude">127.085924</div>
+            <div class="price">1940000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">강변</div>
+            <div class="latitude">37.535108</div>
+            <div class="logitude">127.094648</div>
+            <div class="price">2607000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">잠실나루</div>
+            <div class="latitude">37.520576</div>
+            <div class="logitude">127.103837</div>
+            <div class="price">2184000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">잠실</div>
+            <div class="latitude">37.513296</div>
+            <div class="logitude">127.100178</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">잠실새내</div>
+            <div class="latitude">37.511601</div>
+            <div class="logitude">127.086067</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">종합운동장</div>
+            <div class="latitude">37.511520</div>
+            <div class="logitude">127.076328</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">삼성</div>
+            <div class="latitude">37.508843</div>
+            <div class="logitude">127.063151</div>
+            <div class="price">3048000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">선릉</div>
+            <div class="latitude">37.504281</div>
+            <div class="logitude">127.048174</div>
+            <div class="price">4785000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">역삼</div>
+            <div class="latitude">37.500706</div>
+            <div class="logitude">127.036372</div>
+            <div class="price">4785000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">강남</div>
+            <div class="latitude">37.497935</div>
+            <div class="logitude">127.027541</div>
+            <div class="price">4785000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">교대</div>
+            <div class="latitude">37.493958</div>
+            <div class="logitude">127.014631</div>
+            <div class="price">5808000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">서초</div>
+            <div class="latitude">37.491886</div>
+            <div class="logitude">127.007873</div>
+            <div class="price">6039000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">방배</div>
+            <div class="latitude">37.481426</div>
+            <div class="logitude">126.997596</div>
+            <div class="price">4554000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">사당</div>
+            <div class="latitude">37.476513</div>
+            <div class="logitude">126.981842</div>
+            <div class="price">2795000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">낙성대</div>
+            <div class="latitude">37.477008</div>
+            <div class="logitude">126.963560</div>
+            <div class="price">2620000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">서울대입구</div>
+            <div class="latitude">37.481333</div>
+            <div class="logitude">126.952702</div>
+            <div class="price">3465000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">봉천</div>
+            <div class="latitude">37.482371</div>
+            <div class="logitude">126.941872</div>
+            <div class="price">3465000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신림</div>
+            <div class="latitude">37.484224</div>
+            <div class="logitude">126.929661</div>
+            <div class="price">2438000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신대방</div>
+            <div class="latitude">37.487396</div>
+            <div class="logitude">126.912976</div>
+            <div class="price">1428000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">구로디지털단지</div>
+            <div class="latitude">37.485294</div>
+            <div class="logitude">126.901345</div>
+            <div class="price">966900</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">대림</div>
+            <div class="latitude">37.493333</div>
+            <div class="logitude">126.894824</div>
+            <div class="price">966900</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신설동</div>
+            <div class="latitude">37.574620</div>
+            <div class="logitude">127.025228</div>
+            <div class="price">2836000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">용두</div>
+            <div class="latitude">37.574040</div>
+            <div class="logitude">127.038094</div>
+            <div class="price">1402000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">신답</div>
+            <div class="latitude">37.569815</div>
+            <div class="logitude">127.047031</div>
+            <div class="price">1155000</div>
+        </li>
+        <li class="contents line2">
+            <div class="name">용답</div>
+            <div class="latitude">37.562232</div>
+            <div class="logitude">127.050813</div>
+            <div class="price">1056000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">대화</div>
+            <div class="latitude">37.676095</div>
+            <div class="logitude">126.747394</div>
+            <div class="price">1389000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">주엽</div>
+            <div class="latitude">37.670069</div>
+            <div class="logitude">126.761205</div>
+            <div class="price">2283000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">정발산</div>
+            <div class="latitude">37.659469</div>
+            <div class="logitude">126.773393</div>
+            <div class="price">1232000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">마두</div>
+            <div class="latitude">37.652141</div>
+            <div class="logitude">126.777722</div>
+            <div class="price">834900</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">백석</div>
+            <div class="latitude">37.643034</div>
+            <div class="logitude">126.787959</div>
+            <div class="price">624900</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">대곡</div>
+            <div class="latitude">37.631643</div>
+            <div class="logitude">126.811398</div>
+            <div class="price">118100</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">화정</div>
+            <div class="latitude">37.634599</div>
+            <div class="logitude">126.832727</div>
+            <div class="price">1978000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">원당</div>
+            <div class="latitude">37.653356</div>
+            <div class="logitude">126.842984</div>
+            <div class="price">124000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">원흥</div>
+            <div class="latitude">37.650713</div>
+            <div class="logitude">126.872580</div>
+            <div class="price">1287000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">삼송</div>
+            <div class="latitude">37.653111</div>
+            <div class="logitude">126.895438</div>
+            <div class="price">1650000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">지축</div>
+            <div class="latitude">37.648055</div>
+            <div class="logitude">126.913945</div>
+            <div class="price">513900</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">구파발</div>
+            <div class="latitude">37.636758</div>
+            <div class="logitude">126.918801</div>
+            <div class="price">237000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">연신내</div>
+            <div class="latitude">37.619237</div>
+            <div class="logitude">126.921040</div>
+            <div class="price">5016000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">불광</div>
+            <div class="latitude">37.610582</div>
+            <div class="logitude">126.929836</div>
+            <div class="price">4884000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">녹번</div>
+            <div class="latitude">37.600927</div>
+            <div class="logitude">126.935721</div>
+            <div class="price">2980000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">홍제</div>
+            <div class="latitude">37.589103</div>
+            <div class="logitude">126.943706</div>
+            <div class="price">3227000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">무악재</div>
+            <div class="latitude">37.582396</div>
+            <div class="logitude">126.950280</div>
+            <div class="price">2030000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">독립문</div>
+            <div class="latitude">37.574591</div>
+            <div class="logitude">126.957699</div>
+            <div class="price">2079000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">경복궁</div>
+            <div class="latitude">37.575791</div>
+            <div class="logitude">126.973505</div>
+            <div class="price">4686000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">안국</div>
+            <div class="latitude">37.576471</div>
+            <div class="logitude">126.985308</div>
+            <div class="price">3828000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">종로3가</div>
+            <div class="latitude">37.571255</div>
+            <div class="logitude">126.991913</div>
+            <div class="price">7161000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">충무로</div>
+            <div class="latitude">37.561616</div>
+            <div class="logitude">126.993871</div>
+            <div class="price">5841000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">동대입구</div>
+            <div class="latitude">37.559064</div>
+            <div class="logitude">127.005515</div>
+            <div class="price">1150000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">약수</div>
+            <div class="latitude">37.554422</div>
+            <div class="logitude">127.010912</div>
+            <div class="price">3729000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">금호</div>
+            <div class="latitude">37.548149</div>
+            <div class="logitude">127.015824</div>
+            <div class="price">3069000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">옥수</div>
+            <div class="latitude">37.541778</div>
+            <div class="logitude">127.017296</div>
+            <div class="price">1593000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">압구정</div>
+            <div class="latitude">37.527131</div>
+            <div class="logitude">127.028318</div>
+            <div class="price">3059000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">신사</div>
+            <div class="latitude">37.516285</div>
+            <div class="logitude">127.019942</div>
+            <div class="price">2323000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">잠원</div>
+            <div class="latitude">37.512738</div>
+            <div class="logitude">127.011217</div>
+            <div class="price">5130000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">고속터미널</div>
+            <div class="latitude">37.504882</div>
+            <div class="logitude">127.004899</div>
+            <div class="price">15000000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">교대</div>
+            <div class="latitude">37.493075</div>
+            <div class="logitude">127.013651</div>
+            <div class="price">5808000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">남부터미널</div>
+            <div class="latitude">37.484990</div>
+            <div class="logitude">127.016168</div>
+            <div class="price">5082000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">양재</div>
+            <div class="latitude">37.484614</div>
+            <div class="logitude">127.034472</div>
+            <div class="price">5973000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">매봉</div>
+            <div class="latitude">37.486677</div>
+            <div class="logitude">127.046177</div>
+            <div class="price">2313000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">도곡</div>
+            <div class="latitude">37.490788</div>
+            <div class="logitude">127.055181</div>
+            <div class="price">2948000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">대치</div>
+            <div class="latitude">37.494534</div>
+            <div class="logitude">127.063383</div>
+            <div class="price">2970000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">학여울</div>
+            <div class="latitude">37.496680</div>
+            <div class="logitude">127.070627</div>
+            <div class="price">2214000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">대청</div>
+            <div class="latitude">37.493530</div>
+            <div class="logitude">127.079506</div>
+            <div class="price">2109000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">일원</div>
+            <div class="latitude">37.483724</div>
+            <div class="logitude">127.084324</div>
+            <div class="price">14720000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">수서</div>
+            <div class="latitude">37.487312</div>
+            <div class="logitude">127.101477</div>
+            <div class="price">2088000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">가락시장</div>
+            <div class="latitude">37.492248</div>
+            <div class="logitude">127.117740</div>
+            <div class="price">831000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">경찰병원</div>
+            <div class="latitude">37.495812</div>
+            <div class="logitude">127.124371</div>
+            <div class="price">1877000</div>
+        </li>
+        <li class="contents line3">
+            <div class="name">오금</div>
+            <div class="latitude">37.502141</div>
+            <div class="logitude">127.128291</div>
+            <div class="price">1923000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">오이도</div>
+            <div class="latitude">37.361902</div>
+            <div class="logitude">126.738537</div>
+            <div class="price">53000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">정왕</div>
+            <div class="latitude">37.351958</div>
+            <div class="logitude">126.742442</div>
+            <div class="price">547800</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">신길온천</div>
+            <div class="latitude">37.338543</div>
+            <div class="logitude">126.765401</div>
+            <div class="price">33000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">안산</div>
+            <div class="latitude">37.327487</div>
+            <div class="logitude">126.787717</div>
+            <div class="price">42000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">초지</div>
+            <div class="latitude">37.320694</div>
+            <div class="logitude">126.805817</div>
+            <div class="price">269900</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">고잔</div>
+            <div class="latitude">37.316810</div>
+            <div class="logitude">126.823117</div>
+            <div class="price">270000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">중앙</div>
+            <div class="latitude">37.316031</div>
+            <div class="logitude">126.838434</div>
+            <div class="price">377200</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">한대앞</div>
+            <div class="latitude">37.310040</div>
+            <div class="logitude">126.853055</div>
+            <div class="price">469500</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">상록수</div>
+            <div class="latitude">37.302769</div>
+            <div class="logitude">126.866573</div>
+            <div class="price">454600</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">반월</div>
+            <div class="latitude">37.312190</div>
+            <div class="logitude">126.903480</div>
+            <div class="price">45400</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">대야미</div>
+            <div class="latitude">37.328410</div>
+            <div class="logitude">126.917248</div>
+            <div class="price">75900</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">수리산</div>
+            <div class="latitude">37.350178</div>
+            <div class="logitude">126.925445</div>
+            <div class="price">742500</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">산본</div>
+            <div class="latitude">37.358058</div>
+            <div class="logitude">126.933041</div>
+            <div class="price">2226000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">금정</div>
+            <div class="latitude">37.372302</div>
+            <div class="logitude">126.943592</div>
+            <div class="price">573900</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">범계</div>
+            <div class="latitude">37.389715</div>
+            <div class="logitude">126.950574</div>
+            <div class="price">7665000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">평촌</div>
+            <div class="latitude">37.394334</div>
+            <div class="logitude">126.963925</div>
+            <div class="price">6755000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">인덕원</div>
+            <div class="latitude">37.401664</div>
+            <div class="logitude">126.976714</div>
+            <div class="price">1535000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">정부과천청사</div>
+            <div class="latitude">37.426512</div>
+            <div class="logitude">126.989674</div>
+            <div class="price">1795000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">과천</div>
+            <div class="latitude">37.433055</div>
+            <div class="logitude">126.996970</div>
+            <div class="price">993300</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">대공원</div>
+            <div class="latitude">37.435679</div>
+            <div class="logitude">127.006540</div>
+            <div class="price">500000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">경마공원</div>
+            <div class="latitude">37.443652</div>
+            <div class="logitude">127.007827</div>
+            <div class="price">253400</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">선바위</div>
+            <div class="latitude">37.451658</div>
+            <div class="logitude">127.002248</div>
+            <div class="price">174500</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">남태령</div>
+            <div class="latitude">37.463859</div>
+            <div class="logitude">126.989170</div>
+            <div class="price">529400</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">사당</div>
+            <div class="latitude">37.477024</div>
+            <div class="logitude">126.981674</div>
+            <div class="price">4785000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">총신대입구</div>
+            <div class="latitude">37.487482</div>
+            <div class="logitude">126.982234</div>
+            <div class="price">4719000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">동작</div>
+            <div class="latitude">37.502855</div>
+            <div class="logitude">126.980320</div>
+            <div class="price">59400</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">이촌</div>
+            <div class="latitude">37.522301</div>
+            <div class="logitude">126.974713</div>
+            <div class="price">2399000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">신용산</div>
+            <div class="latitude">37.529169</div>
+            <div class="logitude">126.967873</div>
+            <div class="price">27500000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">삼각지</div>
+            <div class="latitude">37.533948</div>
+            <div class="logitude">126.972560</div>
+            <div class="price">5440000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">숙대입구</div>
+            <div class="latitude">37.544599</div>
+            <div class="logitude">126.972088</div>
+            <div class="price">8075000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">서울역</div>
+            <div class="latitude">37.553178</div>
+            <div class="logitude">126.972607</div>
+            <div class="price">8250000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">회현</div>
+            <div class="latitude">37.558555</div>
+            <div class="logitude">126.978160</div>
+            <div class="price">7590000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">명동</div>
+            <div class="latitude">37.560908</div>
+            <div class="logitude">126.986412</div>
+            <div class="price">13780000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">동대문역사문화공원</div>
+            <div class="latitude">37.565160</div>
+            <div class="logitude">127.007873</div>
+            <div class="price">6072000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">동대문</div>
+            <div class="latitude">37.570950</div>
+            <div class="logitude">127.009308</div>
+            <div class="price">7656000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">혜화</div>
+            <div class="latitude">37.582210</div>
+            <div class="logitude">127.001879</div>
+            <div class="price">7128000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">한성대입구</div>
+            <div class="latitude">37.588446</div>
+            <div class="logitude">127.006206</div>
+            <div class="price">3055000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">성신여대입구</div>
+            <div class="latitude">37.592613</div>
+            <div class="logitude">127.016410</div>
+            <div class="price">3927000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">길음</div>
+            <div class="latitude">37.603395</div>
+            <div class="logitude">127.025053</div>
+            <div class="price">1336000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">미아사거리</div>
+            <div class="latitude">37.613306</div>
+            <div class="logitude">127.030070</div>
+            <div class="price">5016000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">미아</div>
+            <div class="latitude">37.626736</div>
+            <div class="logitude">127.025954</div>
+            <div class="price">976800</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">수유</div>
+            <div class="latitude">37.638034</div>
+            <div class="logitude">127.025681</div>
+            <div class="price">1471000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">쌍문</div>
+            <div class="latitude">37.648612</div>
+            <div class="logitude">127.034716</div>
+            <div class="price">1689000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">창동</div>
+            <div class="latitude">37.652997</div>
+            <div class="logitude">127.046890</div>
+            <div class="price">1320000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">노원</div>
+            <div class="latitude">37.656289</div>
+            <div class="logitude">127.063232</div>
+            <div class="price">1270000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">상계</div>
+            <div class="latitude">37.660923</div>
+            <div class="logitude">127.073479</div>
+            <div class="price">1082000</div>
+        </li>
+        <li class="contents line4">
+            <div class="name">당고개</div>
+            <div class="latitude">37.670296</div>
+            <div class="logitude">127.079031</div>
+            <div class="price">174000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">방화</div>
+            <div class="latitude">37.577392</div>
+            <div class="logitude">126.812751</div>
+            <div class="price">1369000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">개화산</div>
+            <div class="latitude">37.572360</div>
+            <div class="logitude">126.806157</div>
+            <div class="price">4728000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">김포공항</div>
+            <div class="latitude">37.561699</div>
+            <div class="logitude">126.801274</div>
+            <div class="price">1950000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">송정</div>
+            <div class="latitude">37.561175</div>
+            <div class="logitude">126.811911</div>
+            <div class="price">1788000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">마곡</div>
+            <div class="latitude">37.560114</div>
+            <div class="logitude">126.825263</div>
+            <div class="price">2333000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">발산</div>
+            <div class="latitude">37.558632</div>
+            <div class="logitude">126.837690</div>
+            <div class="price">3349000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">우장산</div>
+            <div class="latitude">37.548868</div>
+            <div class="logitude">126.836318</div>
+            <div class="price">1765000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">화곡</div>
+            <div class="latitude">37.541655</div>
+            <div class="logitude">126.840371</div>
+            <div class="price">2399000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">까치산</div>
+            <div class="latitude">37.532069</div>
+            <div class="logitude">126.846510</div>
+            <div class="price">1955000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">신정</div>
+            <div class="latitude">37.525007</div>
+            <div class="logitude">126.856282</div>
+            <div class="price">1491000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">목동</div>
+            <div class="latitude">37.526100</div>
+            <div class="logitude">126.864563</div>
+            <div class="price">2607000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">오목교</div>
+            <div class="latitude">37.524510</div>
+            <div class="logitude">126.875129</div>
+            <div class="price">3300000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">양평</div>
+            <div class="latitude">37.525584</div>
+            <div class="logitude">126.886144</div>
+            <div class="price">1570000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">영등포구청</div>
+            <div class="latitude">37.524228</div>
+            <div class="logitude">126.895009</div>
+            <div class="price">2907000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">영등포시장</div>
+            <div class="latitude">37.522683</div>
+            <div class="logitude">126.905046</div>
+            <div class="price">2692000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">신길</div>
+            <div class="latitude">37.517630</div>
+            <div class="logitude">126.914866</div>
+            <div class="price">1013000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">여의도</div>
+            <div class="latitude">37.521745</div>
+            <div class="logitude">126.924351</div>
+            <div class="price">6369000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">여의나루</div>
+            <div class="latitude">37.527052</div>
+            <div class="logitude">126.932833</div>
+            <div class="price">680000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">마포</div>
+            <div class="latitude">37.539621</div>
+            <div class="logitude">126.945958</div>
+            <div class="price">5049000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">공덕</div>
+            <div class="latitude">37.544332</div>
+            <div class="logitude">126.951332</div>
+            <div class="price">14200000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">애오개</div>
+            <div class="latitude">37.553459</div>
+            <div class="logitude">126.956680</div>
+            <div class="price">3432000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">충정로</div>
+            <div class="latitude">37.560409</div>
+            <div class="logitude">126.962965</div>
+            <div class="price">1481000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">서대문</div>
+            <div class="latitude">37.565627</div>
+            <div class="logitude">126.966495</div>
+            <div class="price">2712000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">광화문</div>
+            <div class="latitude">37.571596</div>
+            <div class="logitude">126.976582</div>
+            <div class="price">16500000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">종로3가</div>
+            <div class="latitude">37.572556</div>
+            <div class="logitude">126.990438</div>
+            <div class="price">2013000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">을지로4가</div>
+            <div class="latitude">37.567609</div>
+            <div class="logitude">126.998049</div>
+            <div class="price">2986000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">청구</div>
+            <div class="latitude">37.560320</div>
+            <div class="logitude">127.013559</div>
+            <div class="price">2013000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">신금호</div>
+            <div class="latitude">37.554502</div>
+            <div class="logitude">127.020445</div>
+            <div class="price">4138000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">행당</div>
+            <div class="latitude">37.557287</div>
+            <div class="logitude">127.029452</div>
+            <div class="price">2379000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">왕십리</div>
+            <div class="latitude">37.561953</div>
+            <div class="logitude">127.037278</div>
+            <div class="price">5069000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">마장</div>
+            <div class="latitude">37.566062</div>
+            <div class="logitude">127.042924</div>
+            <div class="price">1739000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">답십리</div>
+            <div class="latitude">37.566832</div>
+            <div class="logitude">127.052661</div>
+            <div class="price">1560000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">장한평</div>
+            <div class="latitude">37.561429</div>
+            <div class="logitude">127.064606</div>
+            <div class="price">1122000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">군자</div>
+            <div class="latitude">37.557075</div>
+            <div class="logitude">127.079650</div>
+            <div class="price">2955000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">아차산</div>
+            <div class="latitude">37.552021</div>
+            <div class="logitude">127.089594</div>
+            <div class="price">3154000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">광나루</div>
+            <div class="latitude">37.545304</div>
+            <div class="logitude">127.103449</div>
+            <div class="price">1122000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">천호</div>
+            <div class="latitude">37.538554</div>
+            <div class="logitude">127.123572</div>
+            <div class="price">4488000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">강동</div>
+            <div class="latitude">37.535799</div>
+            <div class="logitude">127.132524</div>
+            <div class="price">4653000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">길동</div>
+            <div class="latitude">37.538318</div>
+            <div class="logitude">127.140196</div>
+            <div class="price">3438000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">굽은다리</div>
+            <div class="latitude">37.545454</div>
+            <div class="logitude">127.142852</div>
+            <div class="price">3045000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">명일</div>
+            <div class="latitude">37.551343</div>
+            <div class="logitude">127.143977</div>
+            <div class="price">2897000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">고덕</div>
+            <div class="latitude">37.555008</div>
+            <div class="logitude">127.154239</div>
+            <div class="price">2138000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">상일동</div>
+            <div class="latitude">37.556704</div>
+            <div class="logitude">127.166332</div>
+            <div class="price">2805000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">둔촌동</div>
+            <div class="latitude">37.527791</div>
+            <div class="logitude">127.136225</div>
+            <div class="price">3062000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">올림픽공원</div>
+            <div class="latitude">37.516190</div>
+            <div class="logitude">127.130954</div>
+            <div class="price">1782000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">방이</div>
+            <div class="latitude">37.508757</div>
+            <div class="logitude">127.126099</div>
+            <div class="price">1848000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">오금</div>
+            <div class="latitude">37.502265</div>
+            <div class="logitude">127.127663</div>
+            <div class="price">1923000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">개롱</div>
+            <div class="latitude">37.498085</div>
+            <div class="logitude">127.134768</div>
+            <div class="price">1923000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">거여</div>
+            <div class="latitude">37.493226</div>
+            <div class="logitude">127.143958</div>
+            <div class="price">1336000</div>
+        </li>
+        <li class="contents line5">
+            <div class="name">마천</div>
+            <div class="latitude">37.494952</div>
+            <div class="logitude">127.152768</div>
+            <div class="price">1115000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">독바위</div>
+            <div class="latitude">37.618390</div>
+            <div class="logitude">126.933018</div>
+            <div class="price">1550000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">연신내</div>
+            <div class="latitude">37.618568</div>
+            <div class="logitude">126.920490</div>
+            <div class="price">4704000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">구산</div>
+            <div class="latitude">37.611220</div>
+            <div class="logitude">126.917227</div>
+            <div class="price">2378000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">응암</div>
+            <div class="latitude">37.598624</div>
+            <div class="logitude">126.915543</div>
+            <div class="price">1823000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">불광</div>
+            <div class="latitude">37.610839</div>
+            <div class="logitude">126.929300</div>
+            <div class="price">4884000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">역촌</div>
+            <div class="latitude">37.606057</div>
+            <div class="logitude">126.922725</div>
+            <div class="price">1584000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">새절</div>
+            <div class="latitude">37.591149</div>
+            <div class="logitude">126.913619</div>
+            <div class="price">1778000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">증산</div>
+            <div class="latitude">37.583981</div>
+            <div class="logitude">126.909746</div>
+            <div class="price">1570000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">디지털미디어시티</div>
+            <div class="latitude">37.575415</div>
+            <div class="logitude">126.900702</div>
+            <div class="price">2151000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">월드컵경기장</div>
+            <div class="latitude">37.569464</div>
+            <div class="logitude">126.899081</div>
+            <div class="price">1841000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">마포구청</div>
+            <div class="latitude">37.563561</div>
+            <div class="logitude">126.903335</div>
+            <div class="price">1634000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">망원</div>
+            <div class="latitude">37.556041</div>
+            <div class="logitude">126.910094</div>
+            <div class="price">3778000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">합정</div>
+            <div class="latitude">37.548979</div>
+            <div class="logitude">126.913631</div>
+            <div class="price">2103000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">상수</div>
+            <div class="latitude">37.547695</div>
+            <div class="logitude">126.922923</div>
+            <div class="price">4026000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">광흥창</div>
+            <div class="latitude">37.547456</div>
+            <div class="logitude">126.931653</div>
+            <div class="price">3762000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">대흥</div>
+            <div class="latitude">37.547825</div>
+            <div class="logitude">126.941963</div>
+            <div class="price">3052000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">공덕</div>
+            <div class="latitude">37.543469</div>
+            <div class="logitude">126.951917</div>
+            <div class="price">4851000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">효창공원앞</div>
+            <div class="latitude">37.539288</div>
+            <div class="logitude">126.961400</div>
+            <div class="price">3240000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">삼각지</div>
+            <div class="latitude">37.535600</div>
+            <div class="logitude">126.973938</div>
+            <div class="price">4092000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">녹사평</div>
+            <div class="latitude">37.534704</div>
+            <div class="logitude">126.986634</div>
+            <div class="price">2742000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">이태원</div>
+            <div class="latitude">37.534481</div>
+            <div class="logitude">126.994352</div>
+            <div class="price">9516000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">한강진</div>
+            <div class="latitude">37.539622</div>
+            <div class="logitude">127.001740</div>
+            <div class="price">17950000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">버티고개</div>
+            <div class="latitude">37.547945</div>
+            <div class="logitude">127.006975</div>
+            <div class="price">2379000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">약수</div>
+            <div class="latitude">37.554097</div>
+            <div class="logitude">127.010256</div>
+            <div class="price">4080000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">청구</div>
+            <div class="latitude">37.560018</div>
+            <div class="logitude">127.013664</div>
+            <div class="price">3055000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">신당</div>
+            <div class="latitude">37.566156</div>
+            <div class="logitude">127.016155</div>
+            <div class="price">3597000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">동묘앞</div>
+            <div class="latitude">37.572304</div>
+            <div class="logitude">127.015653</div>
+            <div class="price">3778000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">창신</div>
+            <div class="latitude">37.579772</div>
+            <div class="logitude">127.015236</div>
+            <div class="price">2597000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">보문</div>
+            <div class="latitude">37.585284</div>
+            <div class="logitude">127.019377</div>
+            <div class="price">2527000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">안암</div>
+            <div class="latitude">37.586264</div>
+            <div class="logitude">127.029024</div>
+            <div class="price">2343000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">고려대</div>
+            <div class="latitude">37.590367</div>
+            <div class="logitude">127.036215</div>
+            <div class="price">3951000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">월곡</div>
+            <div class="latitude">37.601943</div>
+            <div class="logitude">127.041498</div>
+            <div class="price">1392000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">상월곡</div>
+            <div class="latitude">37.606386</div>
+            <div class="logitude">127.048463</div>
+            <div class="price">1452000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">돌곶이</div>
+            <div class="latitude">37.610534</div>
+            <div class="logitude">127.056442</div>
+            <div class="price">1834000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">석계</div>
+            <div class="latitude">37.614960</div>
+            <div class="logitude">127.066070</div>
+            <div class="price">808500</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">태릉입구</div>
+            <div class="latitude">37.617439</div>
+            <div class="logitude">127.075067</div>
+            <div class="price">834400</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">화랑대</div>
+            <div class="latitude">37.619903</div>
+            <div class="logitude">127.084423</div>
+            <div class="price">716100</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">봉화산</div>
+            <div class="latitude">37.617287</div>
+            <div class="logitude">127.091395</div>
+            <div class="price">1056000</div>
+        </li>
+        <li class="contents line6">
+            <div class="name">신내</div>
+            <div class="latitude">37.613208</div>
+            <div class="logitude">127.102265</div>
+            <div class="price">520000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">부평구청</div>
+            <div class="latitude">37.507411</div>
+            <div class="logitude">126.721610</div>
+            <div class="price">725300</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">굴포천</div>
+            <div class="latitude">37.506964</div>
+            <div class="logitude">126.731355</div>
+            <div class="price">1176000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">삼산체육관</div>
+            <div class="latitude">37.506454</div>
+            <div class="logitude">126.741956</div>
+            <div class="price">633600</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">상동</div>
+            <div class="latitude">37.505795</div>
+            <div class="logitude">126.753057</div>
+            <div class="price">1758000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">부천시청</div>
+            <div class="latitude">37.504578</div>
+            <div class="logitude">126.764069</div>
+            <div class="price">2590000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">신중동</div>
+            <div class="latitude">37.503033</div>
+            <div class="logitude">126.776225</div>
+            <div class="price">2604000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">춘의</div>
+            <div class="latitude">37.503650</div>
+            <div class="logitude">126.787012</div>
+            <div class="price">1035000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">부천종합운동장</div>
+            <div class="latitude">37.505433</div>
+            <div class="logitude">126.797273</div>
+            <div class="price">295700</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">까치울</div>
+            <div class="latitude">37.506230</div>
+            <div class="logitude">126.810874</div>
+            <div class="price">193700</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">온수</div>
+            <div class="latitude">37.492059</div>
+            <div class="logitude">126.823236</div>
+            <div class="price">1392000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">천왕</div>
+            <div class="latitude">37.486749</div>
+            <div class="logitude">126.838680</div>
+            <div class="price">617000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">광명사거리</div>
+            <div class="latitude">37.479371</div>
+            <div class="logitude">126.854412</div>
+            <div class="price">3045000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">철산</div>
+            <div class="latitude">37.476152</div>
+            <div class="logitude">126.867993</div>
+            <div class="price">2409000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">가산디지털단지</div>
+            <div class="latitude">37.480293</div>
+            <div class="logitude">126.882548</div>
+            <div class="price">3897000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">남구로</div>
+            <div class="latitude">37.486005</div>
+            <div class="logitude">126.887218</div>
+            <div class="price">1914000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">대림</div>
+            <div class="latitude">37.493019</div>
+            <div class="logitude">126.897067</div>
+            <div class="price">2884000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">신풍</div>
+            <div class="latitude">37.500073</div>
+            <div class="logitude">126.909927</div>
+            <div class="price">2065000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">보라매</div>
+            <div class="latitude">37.499885</div>
+            <div class="logitude">126.920034</div>
+            <div class="price">1620000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">신대방삼거리</div>
+            <div class="latitude">37.499689</div>
+            <div class="logitude">126.928317</div>
+            <div class="price">2095000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">장승배기</div>
+            <div class="latitude">37.504881</div>
+            <div class="logitude">126.939046</div>
+            <div class="price">2000000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">상도</div>
+            <div class="latitude">37.502838</div>
+            <div class="logitude">126.947870</div>
+            <div class="price">3465000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">숭실대입구</div>
+            <div class="latitude">37.496062</div>
+            <div class="logitude">126.953900</div>
+            <div class="price">1683000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">남성</div>
+            <div class="latitude">37.484627</div>
+            <div class="logitude">126.971231</div>
+            <div class="price">2141000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">총신대입구</div>
+            <div class="latitude">37.485277</div>
+            <div class="logitude">126.981719</div>
+            <div class="price">3006000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">내방</div>
+            <div class="latitude">37.487660</div>
+            <div class="logitude">126.993628</div>
+            <div class="price">4389000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">고속터미널</div>
+            <div class="latitude">37.503356</div>
+            <div class="logitude">127.005054</div>
+            <div class="price">12120000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">반포</div>
+            <div class="latitude">37.508088</div>
+            <div class="logitude">127.011523</div>
+            <div class="price">6798000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">논현</div>
+            <div class="latitude">37.511066</div>
+            <div class="logitude">127.021351</div>
+            <div class="price">2323000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">학동</div>
+            <div class="latitude">37.514300</div>
+            <div class="logitude">127.031822</div>
+            <div class="price">2323000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">강남구청</div>
+            <div class="latitude">37.517145</div>
+            <div class="logitude">127.041131</div>
+            <div class="price">3098000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">청담</div>
+            <div class="latitude">37.519074</div>
+            <div class="logitude">127.051800</div>
+            <div class="price">3059000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">뚝섬유원지</div>
+            <div class="latitude">37.531633</div>
+            <div class="logitude">127.066735</div>
+            <div class="price">2113000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">건대입구</div>
+            <div class="latitude">37.540778</div>
+            <div class="logitude">127.070984</div>
+            <div class="price">2995000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">어린이대공원</div>
+            <div class="latitude">37.547719</div>
+            <div class="logitude">127.074439</div>
+            <div class="price">2143000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">군자</div>
+            <div class="latitude">37.556875</div>
+            <div class="logitude">127.079331</div>
+            <div class="price">2955000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">중곡</div>
+            <div class="latitude">37.565792</div>
+            <div class="logitude">127.084240</div>
+            <div class="price">1489000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">용마산</div>
+            <div class="latitude">37.573665</div>
+            <div class="logitude">127.086691</div>
+            <div class="price">818400</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">사가정</div>
+            <div class="latitude">37.580871</div>
+            <div class="logitude">127.088477</div>
+            <div class="price">1412000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">면목</div>
+            <div class="latitude">37.588548</div>
+            <div class="logitude">127.087544</div>
+            <div class="price">2164000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">상봉</div>
+            <div class="latitude">37.595598</div>
+            <div class="logitude">127.085725</div>
+            <div class="price">1960000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">중화</div>
+            <div class="latitude">37.602508</div>
+            <div class="logitude">127.079316</div>
+            <div class="price">2182000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">먹골</div>
+            <div class="latitude">37.610622</div>
+            <div class="logitude">127.077654</div>
+            <div class="price">2034000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">태릉입구</div>
+            <div class="latitude">37.618325</div>
+            <div class="logitude">127.075358</div>
+            <div class="price">1020000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">공릉</div>
+            <div class="latitude">37.625591</div>
+            <div class="logitude">127.072937</div>
+            <div class="price">894300</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">하계</div>
+            <div class="latitude">37.636372</div>
+            <div class="logitude">127.068002</div>
+            <div class="price">1234000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">중계</div>
+            <div class="latitude">37.644678</div>
+            <div class="logitude">127.064216</div>
+            <div class="price">1203000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">노원</div>
+            <div class="latitude">37.654914</div>
+            <div class="logitude">127.060439</div>
+            <div class="price">2948000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">마들</div>
+            <div class="latitude">37.664935</div>
+            <div class="logitude">127.057661</div>
+            <div class="price">1138000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">수락산</div>
+            <div class="latitude">37.677702</div>
+            <div class="logitude">127.055348</div>
+            <div class="price">1246000</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">도봉산</div>
+            <div class="latitude">37.689207</div>
+            <div class="logitude">127.046561</div>
+            <div class="price">145800</div>
+        </li>
+        <li class="contents line7">
+            <div class="name">장암</div>
+            <div class="latitude">37.700090</div>
+            <div class="logitude">127.053084</div>
+            <div class="price">393000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">암사</div>
+            <div class="latitude">37.550113</div>
+            <div class="logitude">127.127539</div>
+            <div class="price">2725000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">천호</div>
+            <div class="latitude">37.538302</div>
+            <div class="logitude">127.123340</div>
+            <div class="price">4653000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">강동구청</div>
+            <div class="latitude">37.530287</div>
+            <div class="logitude">127.120465</div>
+            <div class="price">2112000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">몽촌토성</div>
+            <div class="latitude">37.517421</div>
+            <div class="logitude">127.112333</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">잠실</div>
+            <div class="latitude">37.514663</div>
+            <div class="logitude">127.104372</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">석촌</div>
+            <div class="latitude">37.505396</div>
+            <div class="logitude">127.106985</div>
+            <div class="price">2887000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">송파</div>
+            <div class="latitude">37.499734</div>
+            <div class="logitude">127.112102</div>
+            <div class="price">1709000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">가락시장</div>
+            <div class="latitude">37.493053</div>
+            <div class="logitude">127.118235</div>
+            <div class="price">1600000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">문정</div>
+            <div class="latitude">37.485862</div>
+            <div class="logitude">127.122492</div>
+            <div class="price">1643000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">장지</div>
+            <div class="latitude">37.478549</div>
+            <div class="logitude">127.126330</div>
+            <div class="price">1310000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">복정</div>
+            <div class="latitude">37.470351</div>
+            <div class="logitude">127.126711</div>
+            <div class="price">1310000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">산성</div>
+            <div class="latitude">37.456858</div>
+            <div class="logitude">127.150088</div>
+            <div class="price">792000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">남한산성입구</div>
+            <div class="latitude">37.451559</div>
+            <div class="logitude">127.159832</div>
+            <div class="price">25200</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">단대오거리</div>
+            <div class="latitude">37.445067</div>
+            <div class="logitude">127.156755</div>
+            <div class="price">1288000</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">신흥</div>
+            <div class="latitude">37.440949</div>
+            <div class="logitude">127.147655</div>
+            <div class="price">25200</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">수진</div>
+            <div class="latitude">37.437591</div>
+            <div class="logitude">127.141018</div>
+            <div class="price">34400</div>
+        </li>
+        <li class="contents line8">
+            <div class="name">모란</div>
+            <div class="latitude">37.433725</div>
+            <div class="logitude">127.129724</div>
+            <div class="price">25200</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">개화</div>
+            <div class="latitude">37.578626</div>
+            <div class="logitude">126.798110</div>
+            <div class="price">108900</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">김포공항</div>
+            <div class="latitude">37.561974</div>
+            <div class="logitude">126.801616</div>
+            <div class="price">1950000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">공항시장</div>
+            <div class="latitude">37.563489</div>
+            <div class="logitude">126.810392</div>
+            <div class="price">2525000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">신방화</div>
+            <div class="latitude">37.567512</div>
+            <div class="logitude">126.816649</div>
+            <div class="price">838800</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">마곡나루</div>
+            <div class="latitude">37.566869</div>
+            <div class="logitude">126.827223</div>
+            <div class="price">237000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">양천향교</div>
+            <div class="latitude">37.568355</div>
+            <div class="logitude">126.841360</div>
+            <div class="price">2653000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">가양</div>
+            <div class="latitude">37.561057</div>
+            <div class="logitude">126.855126</div>
+            <div class="price">1980000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">증미</div>
+            <div class="latitude">37.557696</div>
+            <div class="logitude">126.861373</div>
+            <div class="price">2069000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">등촌</div>
+            <div class="latitude">37.551097</div>
+            <div class="logitude">126.864757</div>
+            <div class="price">3531000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">염창</div>
+            <div class="latitude">37.546939</div>
+            <div class="logitude">126.874788</div>
+            <div class="price">2478000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">신목동</div>
+            <div class="latitude">37.544277</div>
+            <div class="logitude">126.883094</div>
+            <div class="price">1293000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">선유도</div>
+            <div class="latitude">37.537853</div>
+            <div class="logitude">126.893890</div>
+            <div class="price">1476000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">당산</div>
+            <div class="latitude">37.533412</div>
+            <div class="logitude">126.902859</div>
+            <div class="price">3432000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">국회의사당</div>
+            <div class="latitude">37.528568</div>
+            <div class="logitude">126.917395</div>
+            <div class="price">6352000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">여의도</div>
+            <div class="latitude">37.521752</div>
+            <div class="logitude">126.924055</div>
+            <div class="price">6930000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">샛강</div>
+            <div class="latitude">37.517480</div>
+            <div class="logitude">126.928265</div>
+            <div class="price">680000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">노량진</div>
+            <div class="latitude">37.513566</div>
+            <div class="logitude">126.940982</div>
+            <div class="price">2249000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">노들</div>
+            <div class="latitude">37.512639</div>
+            <div class="logitude">126.953424</div>
+            <div class="price">1155000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">흑석</div>
+            <div class="latitude">37.508816</div>
+            <div class="logitude">126.963686</div>
+            <div class="price">2991000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">동작</div>
+            <div class="latitude">37.502832</div>
+            <div class="logitude">126.978244</div>
+            <div class="price">1026000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">구반포</div>
+            <div class="latitude">37.501356</div>
+            <div class="logitude">126.987264</div>
+            <div class="price">5544000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">신반포</div>
+            <div class="latitude">37.503461</div>
+            <div class="logitude">126.995956</div>
+            <div class="price">5940000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">고속터미널</div>
+            <div class="latitude">37.505978</div>
+            <div class="logitude">127.004310</div>
+            <div class="price">5379000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">사평</div>
+            <div class="latitude">37.504217</div>
+            <div class="logitude">127.015232</div>
+            <div class="price">3795000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">신논현</div>
+            <div class="latitude">37.504435</div>
+            <div class="logitude">127.024499</div>
+            <div class="price">3861000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">언주</div>
+            <div class="latitude">37.507288</div>
+            <div class="logitude">127.033959</div>
+            <div class="price">2242000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">선정릉</div>
+            <div class="latitude">37.510328</div>
+            <div class="logitude">127.044051</div>
+            <div class="price">4785000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">삼성중앙</div>
+            <div class="latitude">37.512789</div>
+            <div class="logitude">127.052478</div>
+            <div class="price">3059000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">봉은사</div>
+            <div class="latitude">37.514202</div>
+            <div class="logitude">127.060150</div>
+            <div class="price">3059000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">종합운동장</div>
+            <div class="latitude">37.511700</div>
+            <div class="logitude">127.076889</div>
+            <div class="price">2877000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">삼전</div>
+            <div class="latitude">37.504527</div>
+            <div class="logitude">127.087295</div>
+            <div class="price">2413000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">석촌고분</div>
+            <div class="latitude">37.502450</div>
+            <div class="logitude">127.097060</div>
+            <div class="price">2343000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">석촌</div>
+            <div class="latitude">37.505165</div>
+            <div class="logitude">127.107112</div>
+            <div class="price">2887000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">송파나루</div>
+            <div class="latitude">37.510254</div>
+            <div class="logitude">127.112188</div>
+            <div class="price">2395000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">한성백제</div>
+            <div class="latitude">37.516314</div>
+            <div class="logitude">127.115813</div>
+            <div class="price">2306000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">올림픽공원</div>
+            <div class="latitude">37.516684</div>
+            <div class="logitude">127.131069</div>
+            <div class="price">2860000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">둔촌오륜</div>
+            <div class="latitude">37.519316</div>
+            <div class="logitude">127.138700</div>
+            <div class="price">1782000</div>
+        </li>
+        <li class="contents line9">
+            <div class="name">중앙보훈병원</div>
+            <div class="latitude">37.526817</div>
+            <div class="logitude">127.147687</div>
+            <div class="price">168600</div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
