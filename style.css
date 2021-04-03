@@ -139,7 +139,7 @@ li div{
     color:#A48010;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .text-backgroud{
         font-size:4.5rem;
         word-break:normal;}
