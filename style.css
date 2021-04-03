@@ -143,8 +143,7 @@ li div{
     .text-backgroud{
         font-size:4.5rem;
         word-break:normal;}
-    (hover:hover){
-        none;
+    #info{
+        font-size: 2rem;
     }
-
 }

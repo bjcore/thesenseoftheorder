@@ -38,6 +38,7 @@ window.onclick = function (close) {
     }
 };
 
+
 infoBtn.onclick = function () {
     bg.style.display = "block";
     modal.style.display = "block";
