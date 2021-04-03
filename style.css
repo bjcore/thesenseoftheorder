@@ -138,7 +138,10 @@ li div{
     .text-backgroud{
         font-size:4.5rem;
         word-break:normal;}
+
     #info{
+        bottom: 2%;
+        right: 2%;
         font-size: 4rem;
     }
 }
