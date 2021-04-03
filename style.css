@@ -34,6 +34,10 @@ li div{
     flex-basis: 200px;
 }
 
+strong{
+    font-weight: 900;
+}
+
 #info{
     width: auto;
     height: auto;
