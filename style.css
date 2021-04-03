@@ -140,7 +140,7 @@ strong{
 
 @media screen and (max-width: 500px){
     .modal-wrap{
-        padding: 2em;
+        padding: 0.5em;
     }
     .text-backgroud{
         font-size:4.5rem;
